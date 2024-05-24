@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body>      
 
 </body>
 
@@ -233,16 +233,43 @@
         </div>
         <!-- Hoja 4-->
         <div class="form-container">
-            <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name" />
+            <h2>Contáctenos</h2>
+            <input type="text" placeholder="Te llamas" />
             <input type="email" placeholder="E-Mail" />
-            <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
-            <a href="#" class="btn btn-primary">Submit</a>
+            <textarea cols="30" rows="6" placeholder="Escribe tu mensaje"></textarea>
+            <a href="#" class="btn btn-primary">Enviar</a>
         </div>
     </div>
 </section>
 <footer id="footer">
     <h2>CESDEFAST &copy; RESERVAS</h2>
+    <script src="index.js">
+    </script>
+      <script src="node app.js">
+    </script>
+      <script src="markdown">
+      </script>
+      <script src="mongo.db">
+      </script>
+     <script src="usuario.js">
+        </script>
+    
+      <script>
+        document.getElementById('cargarUsuarios').addEventListener('click', async () => {
+          try {
+            const response = await fetch('http://localhost:3000/usuarios');
+            const usuarios = await response.json();
+            const usuariosDiv = document.getElementById('usuarios');
+            usuariosDiv.innerHTML = '';
+            usuarios.forEach(usuario => {
+              usuariosDiv.innerHTML += `<p>${usuario.nombre} (${usuario.email})</p>`;
+            });
+          } catch (err) {
+            console.error('Error al cargar usuarios', err);
+          }
+        });
+        
+      </script>
 </footer>
 </body>
 <!-- .................../ JS Code for smooth scrolling /...................... -->
