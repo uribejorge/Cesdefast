@@ -108,10 +108,10 @@ body {
 .showcase-area {
     height: 50vh;
     background: linear-gradient(
-        rgba(240, 240, 240, 0.144),
-        rgba(255, 255, 255, 0.336)
+        rgba(241, 239, 241, 0.945),
+        rgba(229, 226, 228, 0.966)
       ),
-      url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+      url("");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -646,3 +646,11 @@ body {
       height: 50vmax;
     }
   }
+  .showcase-container .main-title {
+    color: #da125b; /* Cambia el color del texto del título */
+    font-size: 3em; /* Ajusta el tamaño del texto del título */
+}
+.showcase-container p {
+  color: #da125b; /* Cambia el color del texto del párrafo */
+  font-size: 1.5em; /* Ajusta el tamaño del texto del párrafo */
+}
