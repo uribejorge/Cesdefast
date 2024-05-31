@@ -36,11 +36,11 @@ body {
 
 .btn-primary {
   color: #fff;
-  background: #16a083;
+  background: #dd079a;
 }
 
 .btn-primary:hover {
-  background: #117964;
+  background: #cd06a8;
   transition: background 0.3s ease-in-out;
 }
 
@@ -325,7 +325,7 @@ body {
   }
   
   .food-description .food-price {
-    color: #117964;
+    color: #e609b2;
     font-weight: 700;
   }
   
@@ -351,7 +351,7 @@ body {
   }
   
   .testimonial-box .checked {
-    color: #ff9529;
+    color: #e804be;
   }
   
   .testimonial-box .testimonial-text {
