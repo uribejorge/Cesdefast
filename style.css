@@ -111,7 +111,7 @@ body {
         rgba(241, 239, 241, 0.945),
         rgba(229, 226, 228, 0.966)
       ),
-      url("");  /*aqui una foto */
+      url("https://firebasestorage.googleapis.com/v0/b/imagenes-e192b.appspot.com/o/cesde1.jpg?alt=media&token=7238eefa-4cb4-4a11-aed5-8bd09db3170e");  /*aqui una foto */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
