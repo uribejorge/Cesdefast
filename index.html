@@ -217,7 +217,7 @@
         <div class="testimonial-box">
             <div class="customer-detail">
                 <div class="customer-photo">
-                    <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-e192b.appspot.com/o/imagen%20jorge%20uribe.png?alt=media&token=3de7984e-4061-4c4e-b55b-5a031c399973" alt="" />
                     <p class="customer-name">jorge uribe</p>
                 </div>
             </div>
@@ -239,18 +239,21 @@
 <section id="contact">
     <div class="contact-container container">
         <div class="contact-img">
-            <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-e192b.appspot.com/o/cesde11.jpg?alt=media&token=9ddf7b0d-f8fd-4674-b410-9db8a87669fa" alt="" />
         </div>
-        <!-- Hoja 4-->
+        <!-- Hoja 4  nuestro container para el envio de informacion sobre contactenos cesdefast-->
         <div class="form-container">
             <h2>Contáctenos</h2>
-            <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="E-Mail" />
-            <textarea cols="30" rows="6" placeholder="Escribe tu mensaje"></textarea>
-            <a href="#" class="btn btn-primary">Enviar</a>
+            <form id="contactForm">
+                <input type="text" placeholder="Nombre" required />
+                <input type="email" placeholder="E-Mail" required />
+                <textarea cols="30" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </div>
 </section>
+
 <footer id="footer">
     <h2>CESDEFAST &copy; RESERVAS</h2>
     <script src="index.js">
@@ -263,6 +266,23 @@
     </script>
     <script src="usuario.js">
     </script>
+    <script>
+
+        // nuestro script para enviar el formulario contactenos cesdefast
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+    
+            // Aquí puedes añadir código para enviar los datos a un servidor si es necesario
+    
+            // Muestra una ventana emergente
+            alert('Enviado exitosamente');
+            
+            // Limpia el formulario después de enviar
+            event.target.reset();
+        });
+    </script>
+    
 
     <script>
         document.getElementById('cargarUsuarios').addEventListener('click', async () => {
