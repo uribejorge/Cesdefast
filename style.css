@@ -654,3 +654,62 @@ body {
   color: #0e0009; /* Cambia el color del texto del párrafo */
   font-size: 1.5em; /* Ajusta el tamaño del texto del párrafo */
 }
+
+
+/* login inicio de sesion cesdefast */
+
+.form-registro {
+  display: none;
+}
+
+.showcase-container {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.login-Form__container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-Form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.login-Form__label, .login-Form__input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-Form__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.app {
+  padding: 20px;
+}
+
+#itemList {
+  list-style: none;
+  padding: 0;
+}
+
+#itemList li {
+  padding: 5px 0;
+}
