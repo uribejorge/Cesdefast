@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario Reserva</title>
+</head>
+<body>
+    <form class="form-registro" id="login-Form" action="">
+        <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
+        <label class="form-registro__label" for="programas">
+          Elija su programa:
+          <input class="form-registro_input" list="programas" id="programa"/>
+          <datalist id="programas">
+            <option value="Asistente Administrativo"></option>
+            <option value="Asistente Contable"></option>
+            <option value="Asesoría Comercial y de Servicios"></option>
+            <option value="Desarrollo de Software"></option>
+            <option value="Diseño Gráfico"></option>
+            <option value="Mercadeo"></option>
+            <option value="Primera Infancia"></option>
+            <option value="Seguridad Laboral"></option>
+            <option value="Talento Humano"></option>
+          </datalist>
+        </label>
+        <label class="form-registro__label" for="fecha-reserva"> Fecha Reserva:
+          <input class="form-registro_input" type="date" id="fecha-reserva" required />
+        </label>
+        <label class="form-registro__label" for="hora-inicio"> Hora Inicio:
+          <input class="form-registro_input" type="time" id="hora-inicio" required />
+        </label>
+        <label class="form-registro__label" for="hora-salida"> Hora Salida:
+          <input class="form-registro_input" type="time" id="hora-salida" required />
+        </label>
+        <label class="form-registro__label" for="email"> Email:
+          <input class="form-registro_input" type="email" id="email" placeholder="ejemplo@correo.com" required />
+        </label>
+        <input class="button" type="submit" onclick="enviar()">
+      </form>
+    <script src="./script.js"></script>
+</body>
+</html>

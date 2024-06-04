@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login CESDE FAST</title>
+  </head>
+  <body>
+    <section class="container">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-Form">
+        <label class="login-Form__label" for="username">Usuario:</label>
+          <input class="login-Form__input" type="text" name="username" id="username" required autocomplete="username"/>
+        <label class="login-Form__label" for="password">Contraseña:</label>
+          <input class="login-Form__input" type="password" name="password" id="password" required autocomplete="current-password"/>
+        <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+        
+      </form>
+    </section>
+
+<!--Esto es se comporta como módulo de JavaScript-->
+    <script type="module" src="./public/script.js"></script> 
+  </body>
+</html>
