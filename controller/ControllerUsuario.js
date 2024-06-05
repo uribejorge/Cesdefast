@@ -2,7 +2,7 @@ import usuarios from "../model/ModelUsuario.js";
 
 export function iniciarSesion() {
   if (buscarUsuario("usuario")) {
-    window.location.href = "../formulario.html";
+    window.location.href = "../reserva.html";
   } else {
     console.log("Usuario y/o contraseña incorrectos");
   }
