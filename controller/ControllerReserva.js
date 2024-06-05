@@ -13,3 +13,5 @@ export function enviar() {
   console.log("Hora Salida: " + horaSalida);
   console.log("Email: " + correoElectronico);
 }
+
+

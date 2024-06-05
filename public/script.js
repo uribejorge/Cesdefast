@@ -1,12 +1,16 @@
 import { iniciarSesion } from "../controller/ControllerUsuario.js";
+import { enviar} from "../controller/ControllerReserva.js";
 
 document.querySelector("#iniciarSesion").addEventListener("click", () => {iniciarSesion()
     console.log("Ingreso Exitoso")
 });
 
+
+
+
 /*let inputs = document.querySelectorAll("input");
 let user = /^(?=.*\d)[a-zA-Z0-9]{4,15}$/;
-let password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{4,10}$/;*/
+let password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{4,10}$/;
 
 const validarCampos = (e) => {
   switch (e.target.name) {
@@ -36,4 +40,4 @@ const validarCampos = (e) => {
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarCampos);
 });
-console.log(inputs);
+console.log(inputs);*/

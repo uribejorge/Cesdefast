@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./styleLoginReserva.css" />
+    <link rel="stylesheet" href="./styleLoginFormulario.css" />
     <title>Formulario Reserva</title>
   </head>
   <body>
-    <form class="form-registro" id="login-Form" action="">
+    <form class="form-registro" id="reserva" action="">
       <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
-      <label class="form-registro__label" for="programas">
+      <label class="form-registro__label" for="programa">
         Elija su programa:
         <input class="form-registro_input" list="programas" id="programa" />
         <datalist id="programas">
@@ -62,8 +62,8 @@
           required
         />
       </label>
-      <input class="button" type="submit" onclick="enviar()" />
+      <button class="button" id="btnenviar" name="btnenviar" type="button" onclick="enviar()">Enviar</button>
     </form>
-    <script src="./script.js"></script>
+    <script type="module" src="../public/script.js"></script>
   </body>
 </html>

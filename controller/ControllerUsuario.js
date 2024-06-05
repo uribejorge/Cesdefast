@@ -15,11 +15,9 @@ function buscarUsuario(id) {
   return estado;
 }
 
-
 // Agregar evento de escucha para el formulario de inicio de sesión
 document
-  .getElementById("login-Form")
-  .addEventListener("submit", function (event) {
+  .getElementById("login-Form").addEventListener("submit", function (event) {
     event.preventDefault(); // Evitar el envío del formulario
     iniciarSesion(); // Llamar función de inicio de sesión
   });

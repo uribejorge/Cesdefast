@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5; /* Agregamos un color de fondo suave */
+}
+
+/* Estilos del contenedor principal */
+.container {
+    width: 100%;
+    max-width: 400px; /* Limitamos el ancho máximo para centrar mejor en pantallas grandes */
+    margin: 50px auto; /* Centramos vertical y horizontalmente */
+    padding: 25px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
+}
+
+/* Estilos del formulario de login */
+#login-Form {
+    margin-top: 20px; /* Espacio entre el título y el formulario */
+}
+
+.login-Form__label {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre etiquetas e input */
+}
+
+.login-Form__input {
+    width: calc(100% - 10px); /* Ancho del input ajustado */
+    padding: 8px;
+    margin-bottom: 15px; /* Espacio entre inputs */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #DB008C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregamos transición para el hover */
+}
+
+button:hover {
+    background-color: #cc1a8b;
+}
+
+/* Estilos del formulario de reserva */
+.form-registro {
+    width: 100%;
+    max-width: 500px; /* Ajustamos el ancho máximo */
+    margin: 50px auto; /* Centramos vertical y horizontalmente */
+    padding: 25px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
+}
+
+.form-registro__h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+}
+
+.form-registro__label {
+    display: block;
+    margin-bottom: 10px; /* Espacio entre etiquetas e input */
+}
+
+.form-registro_input {
+    width: calc(100% - 10px); /* Ancho del input ajustado */
+    padding: 8px;
+    margin-bottom: 15px; /* Espacio entre inputs */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #DB008C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregamos transición para el hover */
+}
+
+.button:hover {
+    background-color: #cc1a8b;
+}
