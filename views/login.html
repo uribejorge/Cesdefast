@@ -11,16 +11,29 @@
     <section class="container">
       <h2>Iniciar Sesión</h2>
       <form id="login-Form">
-        <label class="login-Form__label" for="username">Usuario:</label>
-          <input class="login-Form__input" type="text" name="username" id="username" required autocomplete="username"/>
-        <label class="login-Form__label" for="password">Contraseña:</label>
-          <input class="login-Form__input" type="password" name="password" id="password" required autocomplete="current-password"/>
+        <label class="login-Form__label" for="usuario">Usuario:</label>
+        <input
+          class="login-Form__input"
+          type="text"
+          name="usuario"
+          id="usuario"
+          required
+          autocomplete="usuario"
+        />
+        <label class="login-Form__label" for="contrasena">Contraseña:</label>
+        <input
+          class="login-Form__input"
+          type="password"
+          name="contrasena"
+          id="contrasena"
+          required
+          autocomplete="current-password"
+        />
         <button type="button" id="iniciarSesion">Iniciar Sesión</button>
-        
       </form>
     </section>
 
-<!--Esto es se comporta como módulo de JavaScript-->
-    <script type="module" src="./public/script.js"></script> 
+    <!--Esto es se comporta como módulo de JavaScript-->
+    <script type="module" src="../public/script.js"></script>
   </body>
 </html>
