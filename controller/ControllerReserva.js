@@ -1,5 +1,5 @@
 // Función para botón enviar del formulario de reserva
-function enviar() {
+export function enviar() {
     let programa = document.getElementById("programa").value;
     let fecha = document.getElementById("fecha-reserva").value;
     let horaInicio = document.getElementById("hora-inicio").value;

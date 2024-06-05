@@ -10,3 +10,5 @@ let usuarios = [
     correo: "correonuevo@hotmail.com",
   },
 ];
+
+export default usuarios;

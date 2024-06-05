@@ -30,7 +30,7 @@ const validarCampos = (e) => {
             break;
     }
 }
-inputs.forEach((input)) => {
+inputs.forEach((input) => {
     input.addEventListener("keyup", validarCampos)
-}
-console.log(inputs)
+})
+console.log(inputs);
