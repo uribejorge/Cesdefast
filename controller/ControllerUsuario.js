@@ -4,7 +4,7 @@ export function iniciarSesion() {
   if (buscarUsuario("usuario")) {
     window.location.href = "../formulario.html";
   } else {
-    console.log("Usuario y/o contraseña incorrecto");
+    console.log("Usuario y/o contraseña incorrectos");
   }
 }
 
@@ -14,3 +14,12 @@ function buscarUsuario(id) {
   let estado = usuarios.some((element) => element.usuario === usuario);
   return estado;
 }
+
+/* login javascript cesdefast */
+
+// Agregar evento de escucha para el formulario de inicio de sesión
+document.getElementById("login-Form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evitar el envío del formulario
+  iniciarSesion(); // Llamar función de inicio de sesión
+});
+
