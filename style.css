@@ -767,10 +767,28 @@ button:hover {
 }
 
 /* Estilos del formulario de reserva */
+
+/* Estilos generales */
+
+/* Container para el formulario */
+
+
+.form-registro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10vh; /* Ocupar todo el viewport */
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el formulario */
 .form-registro {
-  width: 100%;
-  max-width: 500px; /* Ajustamos el ancho máximo */
-  margin: 50px auto; /* Centramos vertical y horizontalmente */
+  width: 10%;
+  max-width: 50px; /* Ajustamos el ancho máximo */
   padding: 25px;
   background-color: #ffffff; /* Fondo blanco */
   border: 2px solid #ccc;
@@ -778,25 +796,32 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
 }
 
+/* Estilo para el título del formulario */
 .form-registro__h2 {
   font-size: 22px;
   text-align: center;
   margin-bottom: 20px; /* Espacio entre el título y el formulario */
 }
 
+/* Estilo para las etiquetas */
 .form-registro__label {
   display: block;
-  margin-bottom: 10px; /* Espacio entre etiquetas e input */
+  margin-bottom: 5px; /* Espacio entre etiquetas e input */
+  font-weight: bold;
 }
 
+/* Estilo para los inputs */
 .form-registro_input {
   width: calc(100% - 10px); /* Ancho del input ajustado */
   padding: 8px;
   margin-bottom: 15px; /* Espacio entre inputs */
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
+/* Estilo para el botón */
 .button {
   width: 100%;
   padding: 10px;
