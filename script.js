@@ -16,21 +16,6 @@ function mostrarFormulario() {
     document.getElementById('login-Form__container').style.display = 'flex';
 }
 
-// Manejar inicio de sesión
-function handleLogin(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Aquí agregar lógica de validación de usuario (mocked para el ejemplo)
-    if (username === "Usuario" && password === "") {
-        document.getElementById('login-Form__container').style.display = 'none';
-        document.getElementById('form-registro').style.display = 'block';
-    } else {
-        alert('Usuario o contraseña incorrectos');
-    }
-}
-
 // Manejar envío del formulario de registro
 function enviar(event) {
     event.preventDefault();
@@ -81,6 +66,75 @@ function openReservaWindow() {
         </html>
     `);
     newWindow.document.close();  // Necesario para algunas versiones de IE
+}
+
+// Manejar envío del formulario de contacto
+function enviar(event) {
+    event.preventDefault();
+    alert('Enviado exitosamente');
+    event.target.reset();
+}
+
+
+
+// Abrir nueva ventana con contenido de reserva y centrarla en la pantalla
+
+
+function openReservaWindow() {
+    const width = 800;
+    const height = 600;
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+
+    const newWindow = window.open("", "_blank", `width=${width},height=${height},left=${left},top=${top}`);
+    newWindow.document.write(`
+                    <html>
+                    <head>
+                        <title>Solicitud préstamo de equipo</title>
+                        <link rel="stylesheet" href="styles.css">
+                    </head>
+                    <body>
+                        <div class="form-registro-container">
+                            <form class="form-registro" action="">
+                                <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
+                                <label class="form-registro__label" for="programas">
+                                    Elija su programa:
+                                    <input class="form-registro_input" list="programas" id="programa" />
+                                    <datalist id="programas">
+                                        <option value="Asistente Administrativo"></option>
+                                        <option value="Asistente Contable"></option>
+                                        <option value="Asesoría Comercial y de Servicios"></option>
+                                        <option value="Desarrollo de Software"></option>
+                                        <option value="Diseño Gráfico"></option>
+                                        <option value="Mercadeo"></option>
+                                        <option value="Primera Infancia"></option>
+                                        <option value="Seguridad Laboral"></option>
+                                        <option value="Talento Humano"></option>
+                                    </datalist>
+                                </label>
+                                <label class="form-registro__label" for="fecha-reserva">
+                                    Fecha Reserva:
+                                    <input class="form-registro_input" type="date" id="fecha-reserva" required />
+                                </label>
+                                <label class="form-registro__label" for="hora-inicio">
+                                    Hora Inicio:
+                                    <input class="form-registro_input" type="time" id="hora-inicio" required />
+                                </label>
+                                <label class="form-registro__label" for="hora-salida">
+                                    Hora Salida:
+                                    <input class="form-registro_input" type="time" id="hora-salida" required />
+                                </label>
+                                <label class="form-registro__label" for="email">
+                                    Email:
+                                    <input class="form-registro_input" type="email" id="email" placeholder="ejemplo@correo.com" required />
+                                </label>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </body>
+                    </html>
+                `);
+    newWindow.document.close();
 }
 
 // Manejar envío del formulario de contacto
