@@ -10,21 +10,6 @@
   <body>
     <form class="form-registro" id="reserva" action="">
       <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
-      <label class="form-registro__label" for="programa">
-        Elija su programa:
-        <input class="form-registro_input" list="programas" id="programa" />
-        <datalist id="programas">
-          <option value="Asistente Administrativo"></option>
-          <option value="Asistente Contable"></option>
-          <option value="Asesoría Comercial y de Servicios"></option>
-          <option value="Desarrollo de Software"></option>
-          <option value="Diseño Gráfico"></option>
-          <option value="Mercadeo"></option>
-          <option value="Primera Infancia"></option>
-          <option value="Seguridad Laboral"></option>
-          <option value="Talento Humano"></option>
-        </datalist>
-      </label>
       <label class="form-registro__label" for="fecha-reserva">
         Fecha Reserva:
         <input
@@ -52,6 +37,38 @@
           required
         />
       </label>
+      <label class="form-registro__label" for="programa">
+        Programa:
+        <input class="form-registro_input" list="programas" id="programa" />
+        <datalist id="programas">
+          <option value="Asistente Administrativo"></option>
+          <option value="Asistente Contable"></option>
+          <option value="Asesoría Comercial y de Servicios"></option>
+          <option value="Desarrollo de Software"></option>
+          <option value="Diseño Gráfico"></option>
+          <option value="Mercadeo"></option>
+          <option value="Seguridad Laboral"></option>
+          <option value="Talento Humano"></option>
+        </datalist>
+      </label>
+      <label class="form-registro__label" for="equipo">
+        Equipo:
+        <input class="form-registro_input" list="equipos" id="equipo" />
+        <datalist id="equipos">
+          <option value="125E852"></option>
+          <option value="155A752"></option>
+          <option value="785T232"></option>
+          <option value="425A845"></option>
+        </datalist>
+      </label>
+      <label class="form-registro__label" for="aula">
+        Aula:
+        <input class="form-registro_input" list="aulas" id="aula" />
+        <datalist id="aulas">
+          <option value="Aula 5.8"></option>
+          <option value="Aula 5.2"></option>
+        </datalist>
+      </label>
       <label class="form-registro__label" for="email">
         Email:
         <input
@@ -62,8 +79,9 @@
           required
         />
       </label>
-      <button class="button" id="btnenviar" name="btnenviar" type="button" onclick="enviar()">Enviar</button>
+      <button class="button" id="btnenviar" name="btnenviar" type="button">Enviar</button>
     </form>
+    <div id="reservaInfo"></div>
     <script type="module" src="../public/script.js"></script>
   </body>
 </html>

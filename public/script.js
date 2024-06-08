@@ -5,6 +5,7 @@ document.querySelector("#iniciarSesion").addEventListener("click", () => {inicia
     console.log("Ingreso Exitoso")
 });
 
+document.getElementById("btnenviar").addEventListener("click", enviar)
 
 
 
