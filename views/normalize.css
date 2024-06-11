@@ -119,7 +119,7 @@ samp {
  */
 
 small {
-  font-size: 80%;
+  font-size: 50%;
 }
 
 /**
@@ -129,7 +129,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 50%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -152,7 +152,7 @@ sup {
 
 img {
   border-style: none;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /* Forms
@@ -169,7 +169,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  font-size: 50%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
@@ -247,7 +247,7 @@ legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
-  max-width: 100%; /* 1 */
+  max-width: 50%; /* 1 */
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
@@ -352,4 +352,107 @@ template {
 
 [hidden] {
   display: none;
+}
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f605b6;
+  border-radius: 10px;
+  box-shadow: o o 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  align-items: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+.form-registro {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-registro__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-registro__input {
+  width: calc(100% - 50px); /* Ancho del input ajustado */
+  
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #f605b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para la página de resultados */
+#reservaInfo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#reservaInfo p {
+  margin: 10px 0;
+  color: #333;
+}
+
+#reservaInfo strong {
+  color: #555;
+}
+
+#resultado {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#resultado h2 {
+  color: #d63384;
+}
+
+#resultado p {
+color:#333;
 }

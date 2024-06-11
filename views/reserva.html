@@ -83,5 +83,43 @@
     </form>
     <div id="reservaInfo"></div>
     <script type="module" src="../public/script.js"></script>
+     <script>
+      document.getElementById('btnenviar').addEventListener('click', function () {
+      // Capturar los valores del formulario
+      const fechaReserva = document.getElementById('fecha-reserva').value;
+      const horaInicio = document.getElementById('hora-inicio').value;
+      const horaSalida = document.getElementById('hora-salida').value;
+      const programa = document.getElementById('programa').value;
+      const equipo = document.getElementById('equipo').value;
+      const aula = document.getElementById('aula').value;
+      const email = document.getElementById('email').value;
+
+      // Validar que todos los campos están completos
+      if (fechaReserva && horaInicio && horaSalida && programa && equipo && aula && email) {
+        // Crear un mensaje con los datos capturados
+        const reservaInfo = `
+            <h2>Registro Exitoso</h2>
+            <p><strong>Fecha de Reserva:</strong> ${fechaReserva}</p>
+            <p><strong>Hora de Inicio:</strong> ${horaInicio}</p>
+            <p><strong>Hora de Salida:</strong> ${horaSalida}</p>
+            <p><strong>Programa:</strong> ${programa}</p>
+            <p><strong>Equipo:</strong> ${equipo}</p>
+            <p><strong>Aula:</strong> ${aula}</p>
+            <p><strong>Email:</strong> ${email}</p>
+        `;
+
+        // Mostrar el mensaje en la página
+        document.getElementById('reservaInfo').innerHTML = reservaInfo;
+
+        // Reiniciar el formulario
+        document.getElementById('reserva').reset();
+      } else {
+        alert('Por favor, complete todos los campos.');
+      }
+    });
+  </script>
+
+  <script src="script.js"></script> <!-- Enlace a tu archivo JavaScript -->
+     </script>
   </body>
 </html>
