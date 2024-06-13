@@ -1,126 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styleLoginFormulario.css" />
     <title>Formulario Reserva</title>
-  </head>
-  <body>
-    <form class="form-registro" id="reserva" action="">
-      <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
-      <label class="form-registro__label" for="fecha-reserva">
-        Fecha Reserva:
-        <input
-          class="form-registro_input"
-          type="date"
-          id="fecha-reserva"
-          required
-        />
-      </label>
-      <label class="form-registro__label" for="hora-inicio">
-        Hora Inicio:
-        <input
-          class="form-registro_input"
-          type="time"
-          id="hora-inicio"
-          required
-        />
-      </label>
-      <label class="form-registro__label" for="hora-salida">
-        Hora Salida:
-        <input
-          class="form-registro_input"
-          type="time"
-          id="hora-salida"
-          required
-        />
-      </label>
-      <label class="form-registro__label" for="programa">
-        Programa:
-        <input class="form-registro_input" list="programas" id="programa" />
-        <datalist id="programas">
-          <option value="Asistente Administrativo"></option>
-          <option value="Asistente Contable"></option>
-          <option value="Asesoría Comercial y de Servicios"></option>
-          <option value="Desarrollo de Software"></option>
-          <option value="Diseño Gráfico"></option>
-          <option value="Mercadeo"></option>
-          <option value="Seguridad Laboral"></option>
-          <option value="Talento Humano"></option>
-        </datalist>
-      </label>
-      <label class="form-registro__label" for="equipo">
-        Equipo:
-        <input class="form-registro_input" list="equipos" id="equipo" />
-        <datalist id="equipos">
-          <option value="125E852"></option>
-          <option value="155A752"></option>
-          <option value="785T232"></option>
-          <option value="425A845"></option>
-        </datalist>
-      </label>
-      <label class="form-registro__label" for="aula">
-        Aula:
-        <input class="form-registro_input" list="aulas" id="aula" />
-        <datalist id="aulas">
-          <option value="Aula 5.8"></option>
-          <option value="Aula 5.2"></option>
-        </datalist>
-      </label>
-      <label class="form-registro__label" for="email">
-        Email:
-        <input
-          class="form-registro_input"
-          type="email"
-          id="email"
-          placeholder="ejemplo@correo.com"
-          required
-        />
-      </label>
-      <button class="button" id="btnenviar" name="btnenviar" type="button">Enviar</button>
+</head>
+<body>
+    <section id="form-section">
+        <form class="form-registro" id="reserva" action="">
+            <h2 class="form-registro__h2">Solicitud préstamo de equipo</h2>
+            <label class="form-registro__label" for="fecha-reserva">
+                Fecha Reserva:
+                <input class="form-registro_input" type="date" id="fecha-reserva" required />
+            </label>
+            <label class="form-registro__label" for="hora-inicio">
+                Hora Inicio:
+                <input class="form-registro_input" type="time" id="hora-inicio" required />
+            </label>
+            <label class="form-registro__label" for="hora-salida">
+                Hora Salida:
+                <input class="form-registro_input" type="time" id="hora-salida" required />
+            </label>
+            <label class="form-registro__label" for="programa">
+                Programa:
+                <input class="form-registro_input" list="programas" id="programa" />
+                <datalist id="programas">
+                    <option value="Asistente Administrativo"></option>
+                    <option value="Asistente Contable"></option>
+                    <option value="Asesoría Comercial y de Servicios"></option>
+                    <option value="Desarrollo de Software"></option>
+                    <option value="Diseño Gráfico"></option>
+                    <option value="Mercadeo"></option>
+                    <option value="Seguridad Laboral"></option>
+                    <option value="Talento Humano"></option>
+                </datalist>
+            </label>
+            <label class="form-registro__label" for="equipo">
+                Equipo:
+                <input class="form-registro_input" list="equipos" id="equipo" />
+                <datalist id="equipos">
+                    <option value="125E852"></option>
+                    <option value="155A752"></option>
+                    <option value="785T232"></option>
+                    <option value="425A845"></option>
+                </datalist>
+            </label>
+            <label class="form-registro__label" for="aula">
+                Aula:
+                <input class="form-registro_input" list="aulas" id="aula" />
+                <datalist id="aulas">
+                    <option value="Aula 5.8"></option>
+                    <option value="Aula 5.2"></option>
+                </datalist>
+            </label>
+            <label class="form-registro__label" for="email">
+                Email:
+                <input class="form-registro_input" type="email" id="email" placeholder="ejemplo@correo.com" required />
+            </label>
+            <button class="button" id="btnenviar" name="btnenviar" type="button">Enviar</button>
+        </form>
+    </section>
 
-    </form>
-    <div id="reservaInfo"></div>
-    <script type="module" src="../public/script.js"></script>
-     <script>
-      document.getElementById('btnenviar').addEventListener('click', function () {
-      // Capturar los valores del formulario
-      const fechaReserva = document.getElementById('fecha-reserva').value;
-      const horaInicio = document.getElementById('hora-inicio').value;
-      const horaSalida = document.getElementById('hora-salida').value;
-      const programa = document.getElementById('programa').value;
-      const equipo = document.getElementById('equipo').value;
-      const aula = document.getElementById('aula').value;
-      const email = document.getElementById('email').value;
+    <section id="view-section" style="display: none;">
+        <h2>Registro Exitoso</h2>
+        <p><strong>Fecha de Reserva:</strong> <span id="view-fecha-reserva"></span></p>
+        <p><strong>Hora de Inicio:</strong> <span id="view-hora-inicio"></span></p>
+        <p><strong>Hora de Salida:</strong> <span id="view-hora-salida"></span></p>
+        <p><strong>Programa:</strong> <span id="view-programa"></span></p>
+        <p><strong>Equipo:</strong> <span id="view-equipo"></span></p>
+        <p><strong>Aula:</strong> <span id="view-aula"></span></p>
+        <p><strong>Email:</strong> <span id="view-email"></span></p>
+        <button class="button" id="btnregresar" type="button">Regresar</button>
+    </section>
 
-      // Validar que todos los campos están completos
-      if (fechaReserva && horaInicio && horaSalida && programa && equipo && aula && email) {
-        // Crear un mensaje con los datos capturados
-        const reservaInfo = `
-            <h2>Registro Exitoso</h2>
-            <p><strong>Fecha de Reserva:</strong> ${fechaReserva}</p>
-            <p><strong>Hora de Inicio:</strong> ${horaInicio}</p>
-            <p><strong>Hora de Salida:</strong> ${horaSalida}</p>
-            <p><strong>Programa:</strong> ${programa}</p>
-            <p><strong>Equipo:</strong> ${equipo}</p>
-            <p><strong>Aula:</strong> ${aula}</p>
-            <p><strong>Email:</strong> ${email}</p>
-        `;
+    <script>
+        document.getElementById('btnenviar').addEventListener('click', function () {
+            // Capturar los valores del formulario
+            const fechaReserva = document.getElementById('fecha-reserva').value;
+            const horaInicio = document.getElementById('hora-inicio').value;
+            const horaSalida = document.getElementById('hora-salida').value;
+            const programa = document.getElementById('programa').value;
+            const equipo = document.getElementById('equipo').value;
+            const aula = document.getElementById('aula').value;
+            const email = document.getElementById('email').value;
 
-        // Mostrar el mensaje en la página
-        document.getElementById('reservaInfo').innerHTML = reservaInfo;
+            // Validar que todos los campos están completos
+            if (fechaReserva && horaInicio && horaSalida && programa && equipo && aula && email) {
+                // Mostrar la información capturada en la vista de solo lectura
+                document.getElementById('view-fecha-reserva').innerText = fechaReserva;
+                document.getElementById('view-hora-inicio').innerText = horaInicio;
+                document.getElementById('view-hora-salida').innerText = horaSalida;
+                document.getElementById('view-programa').innerText = programa;
+                document.getElementById('view-equipo').innerText = equipo;
+                document.getElementById('view-aula').innerText = aula;
+                document.getElementById('view-email').innerText = email;
 
-        // Reiniciar el formulario
-        document.getElementById('reserva').reset();
-      } else {
-        alert('Por favor, complete todos los campos.');
-      }
-    });
-  </script>
+                // Ocultar el formulario y mostrar la vista de solo lectura
+                document.getElementById('form-section').style.display = 'none';
+                document.getElementById('view-section').style.display = 'block';
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        });
 
-  <script src="script.js"></script> <!-- Enlace a tu archivo JavaScript -->
-     </script>
-  </body>
+        document.getElementById('btnregresar').addEventListener('click', function () {
+            // Ocultar la vista de solo lectura y mostrar el formulario
+            document.getElementById('view-section').style.display = 'none';
+            document.getElementById('form-section').style.display = 'block';
+        });
+    </script>
+</body>
 </html>
