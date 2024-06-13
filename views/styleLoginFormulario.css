@@ -1,35 +1,39 @@
 /* Estilos generales */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5; /* Agregamos un color de fondo suave */
+    background-color: #f5f5f5; 
 }
 
 /* Estilos del contenedor principal */
+
+
 .container {
     width: 100%;
-    max-width: 400px; /* Limitamos el ancho máximo para centrar mejor en pantallas grandes */
-    margin: 50px auto; /* Centramos vertical y horizontalmente */
+    max-width: 400px; 
+    margin: 50px auto; 
     padding: 25px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff; 
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos del formulario de login */
+  
+
 #login-Form {
-    margin-top: 20px; /* Espacio entre el título y el formulario */
+    margin-top: 20px; 
 }
 
 .login-Form__label {
     display: block;
-    margin-bottom: 5px; /* Espacio entre etiquetas e input */
+    margin-bottom: 5px; 
 }
 
 .login-Form__input {
-    width: calc(100% - 10px); /* Ancho del input ajustado */
+    width: calc(100% - 10px); 
     padding: 8px;
-    margin-bottom: 15px; /* Espacio entre inputs */
+    margin-bottom: 15px; 
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -42,7 +46,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Agregamos transición para el hover */
+    transition: background-color 0.3s; 
 }
 
 button:hover {
@@ -50,32 +54,34 @@ button:hover {
 }
 
 /* Estilos del formulario de reserva */
+
+
 .form-registro {
-    width: 100%;
-    max-width: 500px; /* Ajustamos el ancho máximo */
-    margin: 50px auto; /* Centramos vertical y horizontalmente */
+    width: 120%;
+    max-width: 500px; 
+    margin: 50px auto; 
     padding: 25px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff; 
     border: 2px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .form-registro__h2 {
     font-size: 22px;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+    margin-bottom: 20px; 
 }
 
 .form-registro__label {
     display: block;
-    margin-bottom: 10px; /* Espacio entre etiquetas e input */
+    margin-bottom: 10px; 
 }
 
 .form-registro_input {
-    width: calc(100% - 10px); /* Ancho del input ajustado */
+    width: calc(100% - 10px); 
     padding: 8px;
-    margin-bottom: 15px; /* Espacio entre inputs */
+    margin-bottom: 15px; 
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -88,7 +94,7 @@ button:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Agregamos transición para el hover */
+    transition: background-color 0.3s; 
 }
 
 .button:hover {

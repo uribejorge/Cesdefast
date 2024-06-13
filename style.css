@@ -14,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ///////////..utility classes../////////// */
+/* ///////////..container../////////// */
 
 .container {
   max-width: 1200px;
@@ -46,7 +46,7 @@ body {
 
 /* ............/navbar/............ *
 
-/* desktop mode............/// */
+/* modo escritorio.........../// */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -131,7 +131,7 @@ body {
     margin-top: 1.5em;
   }
   
-  /* ......//about us//...... */
+  /* ......//Sobre nosotros//...... */
   
   #about {
     padding: 50px 0;
@@ -195,7 +195,7 @@ body {
     object-position: right;
   }
   
-  /* ..........////Food category///........... */
+  /* ..........////salas cesdefast///........... */
   
   #food {
     padding: 5rem 0 10rem 0;
@@ -278,7 +278,7 @@ body {
 
   /*hoja 4*/
 
-  /* .........../Food Menu/............ */
+  /* .........../salas cesdefast/............ */
 
 .food-menu-heading {
     text-align: center;
@@ -330,7 +330,7 @@ body {
     font-weight: 700;
   }
   
-  /* ........./ Testimonial /.......... */
+  /* ........./ Testimonio estudiantes/.......... */
   
   #testimonials {
     padding: 5rem 0;
@@ -377,7 +377,7 @@ body {
 
   /* hoja 5 */
 
-  /* ........ Contact Us........... */
+  /* ........ contactenos........... */
 
 #contact {
     padding: 5rem 0;
@@ -454,7 +454,7 @@ body {
 
   /* hoja 6 */
 
-  /* ......../ media query /.......... */
+  /* ......../ Consulta de medios /.......... */
 
 @media (max-width: 768px) {
     .navbar {
@@ -561,7 +561,7 @@ body {
       transform: rotate(-35deg);
     }
   
-    /* ......./ food /......... */
+    /* ......./ /......... */
   
     .food-container {
       flex-direction: column;
@@ -648,12 +648,12 @@ body {
     }
   }
   .showcase-container .main-title {
-    color: #f80593; /* Cambia el color del texto del título */
-    font-size: 3em; /* Ajusta el tamaño del texto del título */
+    color: #f80593; 
+    font-size: 3em;
 }
 .showcase-container p {
-  color: #0e0009; /* Cambia el color del texto del párrafo */
-  font-size: 1.5em; /* Ajusta el tamaño del texto del párrafo */
+  color: #0e0009; 
+  font-size: 1.5em; 
 }
 
 
@@ -717,37 +717,42 @@ body {
 
 
 /* Estilos generales */
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5; /* Agregamos un color de fondo suave */
+  background-color: #f5f5f5; 
 }
 
 /* Estilos del contenedor principal */
+
+
 .login-Form {
   width: 100%;
-  max-width: 400px; /* Limitamos el ancho máximo para centrar mejor en pantallas grandes */
-  margin: 50px auto; /* Centramos vertical y horizontalmente */
+  max-width: 400px; 
+  margin: 50px auto; 
   padding: 25px;
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff; 
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos del formulario de login */
+
 #login-Form {
-  margin-top: 20px; /* Espacio entre el título y el formulario */
+  margin-top: 20px; 
 }
 
 .login-Form__label {
   display: block;
-  margin-bottom: 5px; /* Espacio entre etiquetas e input */
+  margin-bottom: 5px; 
 }
 
 .login-Form__input {
-  width: calc(100% - 10px); /* Ancho del input ajustado */
+  width: calc(100% - 10px); 
   padding: 8px;
-  margin-bottom: 15px; /* Espacio entre inputs */
+  margin-bottom: 15px; 
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -760,74 +765,68 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Agregamos transición para el hover */
+  transition: background-color 0.3s; 
 }
 
 button:hover {
   background-color: #cc1a8b;
 }
 
-/* Estilos del formulario de reserva */
 
-/* Estilos generales */
-
-/* Container para el formulario */
-
-
-/* Estilos generales */
-
-
-/* Estilos del contenedor principal */
 
 
 /* Estilos para el formulario */
+
 .form-registro {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ocupar todo el viewport */
+  height: 100vh; 
   background-color: #f0f0f0;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 400px; /* Ajustamos el ancho máximo */
+  max-width: 400px; 
   padding: 25px;
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff; 
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .login-Form {
   width: 100%;
-  max-width: 400px; /* Ajustamos el ancho máximo */
+  max-width: 400px;
   padding: 25px;
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff; 
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo para el título del formulario */
+
 .form-registro__h2 {
   font-size: 22px;
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre el título y el formulario */
+  margin-bottom: 20px; 
 }
 
 /* Estilo para las etiquetas */
+
 .form-registro__label {
   display: block;
-  margin-bottom: 5px; /* Espacio entre etiquetas e input */
+  margin-bottom: 5px; 
   font-weight: bold;
 }
 
 /* Estilo para los inputs */
+
 .form-registro_input {
-  width: calc(100% - 10px); /* Ancho del input ajustado */
+  width: calc(100% - 10px); 
   padding: 8px;
-  margin-bottom: 15px; /* Espacio entre inputs */
+  margin-bottom: 15px; 
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 1em;
@@ -835,6 +834,7 @@ button:hover {
 }
 
 /* Estilo para el botón */
+
 .button {
   width: 100%;
   padding: 10px;
@@ -843,7 +843,7 @@ button:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Transición para el hover */
+  transition: background-color 0.3s; 
 }
 
 .button:hover {

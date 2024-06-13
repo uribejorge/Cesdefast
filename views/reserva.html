@@ -77,7 +77,9 @@
 
     <script>
         document.getElementById('btnenviar').addEventListener('click', function () {
+            
             // Capturar los valores del formulario
+           
             const fechaReserva = document.getElementById('fecha-reserva').value;
             const horaInicio = document.getElementById('hora-inicio').value;
             const horaSalida = document.getElementById('hora-salida').value;
@@ -87,8 +89,11 @@
             const email = document.getElementById('email').value;
 
             // Validar que todos los campos están completos
+            
             if (fechaReserva && horaInicio && horaSalida && programa && equipo && aula && email) {
+                
                 // Mostrar la información capturada en la vista de solo lectura
+               
                 document.getElementById('view-fecha-reserva').innerText = fechaReserva;
                 document.getElementById('view-hora-inicio').innerText = horaInicio;
                 document.getElementById('view-hora-salida').innerText = horaSalida;
@@ -98,6 +103,7 @@
                 document.getElementById('view-email').innerText = email;
 
                 // Ocultar el formulario y mostrar la vista de solo lectura
+                
                 document.getElementById('form-section').style.display = 'none';
                 document.getElementById('view-section').style.display = 'block';
             } else {
@@ -106,7 +112,9 @@
         });
 
         document.getElementById('btnregresar').addEventListener('click', function () {
+            
             // Ocultar la vista de solo lectura y mostrar el formulario
+            
             document.getElementById('view-section').style.display = 'none';
             document.getElementById('form-section').style.display = 'block';
         });
